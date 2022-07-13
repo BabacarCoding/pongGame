@@ -1,6 +1,6 @@
 import time
 import turtle
-
+import keyboard
 
 wn = turtle.Screen()
 wn.title("Pong by Babacar")
@@ -87,6 +87,9 @@ wn.onkeypress(paddle_a_down, "s")
 wn.onkeypress(paddle_b_up, "Up")
 wn.onkeypress(paddle_b_down, "Down")
 
+
+while keyboard.read_key() != "space":
+    pass
 
 # Main game loop
 while True:
